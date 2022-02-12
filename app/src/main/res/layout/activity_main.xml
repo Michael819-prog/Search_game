@@ -3,10 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:theme="@style/ButtonColor"
     android:background="@color/backgroundLightColor"
-    android:layout_height="match_parent"
     tools:context=".MainActivity">
+
 
     <TextView
         android:id="@+id/welcomeText"
@@ -30,6 +31,7 @@
         android:layout_height="wrap_content"
         android:width="170sp"
         android:height="170sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/rightButton"
         app:layout_constraintHorizontal_bias="0.0"
@@ -44,6 +46,7 @@
         android:layout_height="wrap_content"
         android:width="170sp"
         android:height="170sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/welcomeText"
         app:layout_constraintTop_toBottomOf="@+id/welcomeText"
@@ -54,11 +57,12 @@
         android:id="@+id/inputNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
         android:fontFamily="@font/architects_daughter"
-        android:maxLength="6"
-        android:textSize="96sp"
         android:inputType="number"
+        android:maxLength="6"
+        android:minWidth="48dp"
+        android:text=""
+        android:textSize="96sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/rightButton"
         app:layout_constraintStart_toStartOf="@+id/leftButton"
@@ -81,6 +85,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeText" />
+
+    <TextView
+        android:id="@+id/finishText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:fontFamily="@font/architects_daughter"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:theme="@style/TextColor"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/inputNum"
+        app:layout_constraintVertical_bias="0.309"
+        android:visibility="gone"/>
 
     <TextView
         android:id="@+id/rulesText"
@@ -108,19 +130,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputNum"
-        app:layout_constraintVertical_bias="0.321" />
+        app:layout_constraintVertical_bias="0.321"
+        android:onClick="startGame"/>
 
-    <Button
-        android:id="@+id/restartButton"
+    <TextView
+        android:id="@+id/scoreNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/buttonRestartText"
-        android:theme="@style/BottomButtonColor"
+        android:textSize="30sp"
+        android:theme="@style/TextColor"
+        android:fontFamily="@font/architects_daughter"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputNum"
-        app:layout_constraintVertical_bias="0.321"
+        app:layout_constraintEnd_toEndOf="@+id/startButton"
+        app:layout_constraintStart_toStartOf="@+id/startButton"
+        app:layout_constraintTop_toBottomOf="@+id/startButton"
         android:visibility="gone"/>
 
 
