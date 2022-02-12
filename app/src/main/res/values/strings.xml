@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Search game</string>
+    <string name="welcome">Welcome to the search game!</string>
+    <string name="enter">Enter a positive whole number and press start button!</string>
+    <string name="rules">Now try to guess which one is correct!</string>
+    <string name="buttonStartText">Start game</string>
+    <string name="buttonRestartText">Play once more …</string>
 </resources>
