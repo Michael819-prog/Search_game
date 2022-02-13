@@ -3,8 +3,9 @@
     <string name="welcome">Welcome to the search game!</string>
     <string name="enter">Enter a positive whole number and press start button!</string>
     <string name="rules">Now try to guess which one is correct!</string>
-    <string name="finishYes">Congratulations! You have found the right number! The right answer was </string>
-    <string name="finishNo">Unfortunately you have lost the game. Try next time! The right answer was </string>
+    <string name="finishYes">Congratulations! You have found the right number!</string>
+    <string name="finishNo">Unfortunately you have lost the game. Try next time! </string>
     <string name="buttonStartText">Start game</string>
     <string name="buttonRestartText">Play once more …</string>
+    <string name="change">Reset number range</string>
 </resources>

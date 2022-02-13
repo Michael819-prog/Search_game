@@ -133,19 +133,50 @@
         app:layout_constraintVertical_bias="0.321"
         android:onClick="startGame"/>
 
+    <Button
+        android:id="@+id/changeRange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="changeRange"
+        android:text="@string/change"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startButton"
+        app:layout_constraintVertical_bias="0.847"
+        android:visibility="gone"/>
+
     <TextView
         android:id="@+id/scoreNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:theme="@style/TextColor"
         android:fontFamily="@font/architects_daughter"
+        android:textSize="30sp"
         android:textStyle="bold"
+        android:theme="@style/TextColor"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/startButton"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/startButton"
         app:layout_constraintTop_toBottomOf="@+id/startButton"
-        android:visibility="gone"/>
+        app:layout_constraintVertical_bias="0.366" />
+
+    <TextView
+        android:id="@+id/answerNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/architects_daughter"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:theme="@style/TextColor"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
+        app:layout_constraintEnd_toEndOf="@+id/startButton"
+        app:layout_constraintStart_toStartOf="@+id/startButton"
+        app:layout_constraintTop_toBottomOf="@+id/inputNum"
+        android:visibility="gone"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
