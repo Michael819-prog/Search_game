@@ -8,4 +8,6 @@
     <string name="buttonStartText">Start game</string>
     <string name="buttonRestartText">Play once more …</string>
     <string name="change">Reset number range</string>
+    <string name="wrongAnswer">Wrong answer! -10 points</string>
+    <string name="correctAnswer">Correct answer! +10 points</string>
 </resources>
